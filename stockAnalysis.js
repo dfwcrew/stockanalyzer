@@ -5,7 +5,7 @@ var forecast = require('nostradamus');
 var router = express.Router();
 var app = express();
 var stockQuotes = []; var nostroData = []; var predictions = [];
-var alpha = 0.5; var beta = 0.4; var gamma = 0.6; var period = 135; var m = 135; 
+var alpha = 0.5; var beta = 0.4; var gamma = 0.6; var period = 5; var m = 2; 
 
 var url = "http://www.google.com/finance/getprices?i=900&p=5d&f=d,o,h,l,c,v&df=cpct&q=(ticker)";
 url = url.replace('(ticker)', 'AAPL');
